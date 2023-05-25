@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner"
+            android:id="@+id/banner"
+            app:circularflow_radiusInDP="20dp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardprofile"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Pelaksanaan PPDB Tahap 1 - 2023"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/detail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="10dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="274dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="51dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nama"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/iconperson"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="44dp"
+                    android:src="@drawable/book"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                    app:layout_constraintVertical_bias="0.714"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="67dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="36dp"
+                    android:text="Persiapan"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                    app:layout_constraintHorizontal_bias="0.522"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17 Mei - 05 Juni 2023"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.45"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardinterest"
+            app:cardCornerRadius="20dp"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardprofile">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kelengkapan"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="20dp" />
+
+                <TextView
+                    android:id="@+id/kelengkapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Kelengkapan Profil Siswa"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/belumlengkap"
+                    android:layout_width="280dp"
+                    android:layout_height="31dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Profil Belum Lengkap"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@+id/kelengkapan"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/isilengkap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Lengkapi profil sekarang"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@+id/belumlengkap"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/panah1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.325"
+                    app:layout_constraintStart_toEndOf="@+id/belumlengkap"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.761"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardgoal"
+            android:layout_width="0dp"
+            android:paddingTop="20dp"
+            android:layout_height="470dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardinterest">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/topi"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/layananppdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Layanan PPDB"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Kota Bandung"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/layananppdb"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="74dp"
+                    android:layout_height="68dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/color1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lokasi"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/infoppdb"
+                    android:layout_width="210dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="28dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Info Sekolah PPDB"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.273"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/panah2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="36dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.278"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/sosimg"
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/color2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/sosppdb"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/sosppdb"
+                    android:layout_width="210dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sosialisasi PPDB"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/sosimg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.424"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/panah3"
+                    android:layout_width="25dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="28dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.433"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/daftarimg"
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/color3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/daftarppdb"
+                    app:layout_constraintHorizontal_bias="0.031"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sosimg"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/daftarppdb"
+                    android:layout_width="210dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Pendaftaran PPDB Tahap 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/daftarimg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.566"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/panah4"
+                    android:layout_width="25dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="28dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.584"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/umumimg"
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/color4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/umumppdb"
+                    app:layout_constraintHorizontal_bias="0.031"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sosimg"
+                    app:layout_constraintVertical_bias="0.363"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/umumppdb"
+                    android:layout_width="210dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Penguguman PPDB Tahap 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/umumimg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.702"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/panah5"
+                    android:layout_width="25dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="28dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.735"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/hpimg"
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/color5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/umumppdb"
+                    app:layout_constraintHorizontal_bias="0.083"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sosimg"
+                    app:layout_constraintVertical_bias="0.726"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/hpppdb"
+                    android:layout_width="210dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Hotline"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/umumimg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.84"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/panah6"
+                    android:layout_width="25dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="36dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.866"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardnews"
+            android:layout_width="0dp"
+            android:paddingTop="20dp"
+            android:layout_height="470dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardgoal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toaimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/toa"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/newshead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Berita Terkait PPDB"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/toaimg"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/newstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Dapatkan semua informasi terbaru dan terpopuler terkai PPDB"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/newshead"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/newstitle"
+                    android:layout_width="74dp"
+                    android:layout_height="68dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/news"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/newstxt"
+                    app:layout_constraintVertical_bias="0.046"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <TextView
+                    android:id="@+id/content1"
+                    android:layout_width="212dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="24dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="PPDB SMA/SMK 2022,Ridwan Kamil : PPDB di Jawa Barat"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/newstitle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.292"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/panahnews1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="36dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.278"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/newstitle2"
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/news"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/newstitle"
+                    app:layout_constraintVertical_bias="0.046"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/content2"
+                    android:layout_width="217dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Persiapan PPDB Jabar Tahun 2021 Sudah Matang"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/newstitle2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.467"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/panahnews2"
+                    android:layout_width="25dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="28dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text=">"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.48"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
